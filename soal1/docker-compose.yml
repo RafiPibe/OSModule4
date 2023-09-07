@@ -1,0 +1,14 @@
+version: '3'
+services:
+  barcelona:
+    build:
+      context: /home/pibe/Sisop4/Barcelona/
+      dockerfile: Dockerfile
+    deploy:
+      replicas: 5
+  napoli:
+    build:
+      context: /home/pibe/Sisop4/Napoli/
+      dockerfile: Dockerfile
+    deploy:
+      replicas: 5
